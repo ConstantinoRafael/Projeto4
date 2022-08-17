@@ -1,0 +1,40 @@
+body{
+    background-color:#EEF9BF;
+}
+
+.titulo{
+    height: 133px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: #75B79E;
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.cartas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 122 px;
+}
+
+.cartinha{
+    background-color: #A7E9AF;
+    width:117px;
+    height: 146px;
+    border:1px solid;
+    border-color: #99CEA8;
+    border-radius: 5px;
+    margin: 17px 17px;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    margin-left:10px;
+    margin-top: 24px;
+}
