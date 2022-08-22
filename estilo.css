@@ -1,40 +1,80 @@
 body{
     background-color:#EEF9BF;
+    font-family: 'Roboto', sans-serif;
 }
 
 .titulo{
+    width: 100%;
     height: 133px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-h1{
     color: #75B79E;
     font-size: 56px;
     font-weight: 700;
 }
 
-.cartas{
+ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-left: 122 px;
+    margin-right: 122 px;
 }
 
-.cartinha{
+.cartaToda{
     background-color: #A7E9AF;
     width:117px;
     height: 146px;
     border:1px solid;
     border-color: #99CEA8;
     border-radius: 5px;
-    margin: 17px 17px;
+    margin: 16px 16px;
+    transition: all 1s;
+    position:relative;
+
 }
 
-img{
+.virada{
+    transform: rotateY(180deg);
+}
+
+.virada .verso{
+    display: none;
+}
+
+.verso{
     width: 100px;
     height: 100px;
     margin-left:10px;
-    margin-top: 24px;
+    margin-top: 24px; 
+    position: absolute;
+        
+}
+
+.nao-virada .frente{
+    display:none;
+}
+
+.frente{
+    width: 97px;
+    height: 126px;
+    margin-left:10px;
+    margin-top: 10px;
+    position: absolute;
+
+                     
+}
+
+.esconde{
+    opacity: 0;
+}
+
+
+
+@media (max-width:426px){
+    .titulo{
+        width: 312px;
+        font-size: 36px;
+    }
 }
